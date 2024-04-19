@@ -1,0 +1,43 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.hero h1 {
+  font-size: 40px;
+  color: var(--primary_color);
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+}
+.hero button {
+  padding: 8px 20px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  font-weight: 600;
+  width: 100%;
+  max-width: 150px;
+  background-color: #582f61;
+  color: white;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+}
+/* main content */
+
+/* second content in the main content */
+
+/* content 3  */
+
