@@ -1,17 +1,13 @@
-
- .content-1 {
+  .content-1 {
     background-color: #616388;
     width: 100%;
-    padding: 10px;
     color: white;
-  }
-  .content-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     gap: 30px;
+    padding: 15px;
   }
   .content-1 .content-1-top {
     display: flex;
@@ -19,7 +15,6 @@
     font-size: 18px;
     font-weight: 300;
     gap: 10px;
-    padding: 10px;
     text-align: center;
     max-width: 800px;
   }
@@ -29,7 +24,6 @@
   .content-1 .content-1-bottom {
     display: flex;
     justify-content: center;
-    padding: 10px;
     gap: 20px;
   }
   .content-1 .content-1-bottom h2 {
