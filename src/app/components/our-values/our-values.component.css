@@ -1,0 +1,44 @@
+.our-values-container {
+
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .our-values-container h2 {
+    border-left: 5px solid var(--primary_color);
+    padding-left: 10px;
+    padding: 10px;
+    color: var(--primary_color);
+    font-size: 45px;
+  }
+  
+  .our-values-img img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .our-values-content {
+    width: 60%;
+    color: rgb(69, 67, 67);
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .our-values-content-points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    .our-values-container {
+      flex-direction: column;
+    }
+    .our-values-content {
+      width: 100%;
+    }
+    .our-values-img {
+      width: 100%;
+    }
+  }

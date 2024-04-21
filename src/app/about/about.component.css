@@ -1,0 +1,10 @@
+section{
+    position: relative;
+    padding-bottom: 20px;
+}
+.about-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

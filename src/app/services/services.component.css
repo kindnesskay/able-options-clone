@@ -1,0 +1,50 @@
+.contents {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid rgb(220, 220, 220);
+  padding: 10px;
+  border-radius: 20px;
+}
+.card-content {
+  line-height: 25px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-content h2 {
+  padding: 20px 10px;
+  text-align: center;
+  color: var(--primary_color);
+}
+.card-img,
+img {
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  aspect-ratio: 1.4;
+}
+
+.contact-us {
+  background-color: var(--primary_color);
+  height: 50px;
+  width: fit-content;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: none;
+}
+.contact-us:hover {
+  transition: all 0.5s;
+  background-color: var(--secondary_color);
+}
