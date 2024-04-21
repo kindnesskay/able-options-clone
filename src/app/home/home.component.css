@@ -9,7 +9,7 @@ section {
   text-align: center;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 100px);    
+  min-height: calc(100vh - 100px);
 }
 .hero h1 {
   font-size: 40px;
@@ -34,14 +34,33 @@ section {
   .hero h1 {
     font-size: 35px;
   }
-  .hero{
-    
-
+  .hero {
   }
 }
-/* main content */
+.home-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.content-1 {
+  background-color: var(--primary_color);
+  padding-top: 30px;
+  padding: 10px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-1-top {
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+.content-1-top h2 {
+  font-size: 40px;
 
-/* second content in the main content */
-
-/* content 3  */
-
+  padding: 25px;
+}

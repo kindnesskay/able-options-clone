@@ -2,6 +2,7 @@
   padding: 10px;
   display: flex;
   gap: 20px;
+
 }
 .card {
   border: 1px solid rgb(220, 220, 220);
@@ -13,7 +14,8 @@
   display: flex;
   gap: 25px;
   justify-content: space-between;
-  
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .card-content {
   line-height: 25px;

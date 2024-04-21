@@ -1,16 +1,20 @@
 .our-values-container {
-
     background-color: #f3f3f3;
     width: 100%;
     display: flex;
+    align-items: center;
     gap: 20px;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 20px;
   }
   .our-values-container h2 {
     border-left: 5px solid var(--primary_color);
     padding-left: 10px;
     padding: 10px;
     color: var(--primary_color);
-    font-size: 45px;
+    font-size:35px;
+    text-align: justify;
   }
   
   .our-values-img img {
@@ -18,9 +22,14 @@
     width: 100%;
     height: auto;
   }
+  .our-values-img{
+    height: fit-content;
+    width: 50%;
+
+  }
   
   .our-values-content {
-    width: 60%;
+    width: 50%;
     color: rgb(69, 67, 67);
     font-size: 16px;
     line-height: 25px;
@@ -31,7 +40,7 @@
     gap: 10px;
     margin-top: 20px;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .our-values-container {
       flex-direction: column;
     }
