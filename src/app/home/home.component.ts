@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ContentOneComponent } from '../components/home/content-one/content-one.component';
-import { ContentTwoComponent } from '../components/home/content-two/content-two.component';
 import { ContentThreeComponent } from '../components/home/content-three/content-three.component';
+import { OurValuesComponent } from '../components/our-values/our-values.component';
+import { OurMissionComponent } from '../components/our-mission/our-mission.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ContentOneComponent, ContentTwoComponent, ContentThreeComponent],
+  imports: [OurMissionComponent, OurValuesComponent, ContentThreeComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
