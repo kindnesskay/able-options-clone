@@ -6,12 +6,11 @@
   width: 100%;
 }
 
-
 :root {
   --primary_color: #48466d;
   --secondary_color: #90749f;
   --text_primary: rgb(46, 46, 46);
-  --gray:#f3f3f3
+  --gray: #f3f3f3;
 }
 body {
   scroll-behavior: smooth;
@@ -20,13 +19,11 @@ body {
   position: relative;
 }
 
-
 main {
   padding-top: 100px;
   position: relative;
   width: 100%;
   min-height: 100vh;
-  
 }
 img {
   height: 100%;
@@ -42,4 +39,11 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  h2,
+  h3 {
+    font-size: clamp(25px, 30px, 35px);
+  }
 }
