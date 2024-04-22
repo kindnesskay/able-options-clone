@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: var(--primary_color);
   color: #fff;
-  padding: 30px;
   border-radius: 20px;
+  padding: 10px;
+
 }
 .our-mission-container h2 {
   font-size: 35px;
@@ -19,7 +19,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  font-size: 16px;
+  height: fit-content;
+  
 }
 .our-mission-content p {
   line-height: 26px;
