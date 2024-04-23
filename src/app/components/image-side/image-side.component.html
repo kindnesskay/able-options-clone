@@ -1,8 +1,8 @@
 <div class="slide-container">
   <div class="overlay">
-    <h1>About</h1>
+    <h1>{{title}}</h1>
   </div>
   <div class="img-slides-container">
-    <img id="slides" alt="boy" src="/assets/boy.jpg" />
+    <img id="slides" [hidden]="!image" [alt]="image" [src]="image" />
   </div>
 </div>
