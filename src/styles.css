@@ -48,3 +48,9 @@ section {
     font-size: clamp(25px, 30px, 35px);
   }
 }
+
+
+.video-container button{
+ display: flex;
+ justify-content: center;   
+}

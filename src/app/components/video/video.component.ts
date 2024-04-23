@@ -1,13 +1,16 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
+import { YouTubePlayer } from '@angular/youtube-player';
 
 @Component({
   selector: 'app-video',
   standalone: true,
-  imports: [],
+  imports: [YouTubePlayer],
   templateUrl: './video.component.html',
-  styleUrl: './video.component.css'
+  styleUrl: './video.component.css',
 })
 export class VideoComponent {
-  @Input()videoSrc!:string
-  @Input()videoTitle!:string
+  @Input() height! :number
+  @Input() width!:number;
+  @Input() videoUrl!:string;
+
 }
