@@ -1,12 +1,12 @@
 <header>
   <div class="hide" id="blur-box"></div>
-  <nav>
+  <nav [class]="{'scrolled': isScrolled}">
     <div class="logo-container" routerLink="">
       <img src="assets/able-options-logo.webp" />
     </div>
     <div class="menu">
       <div class="menu-btn" >
-        <img src="assets/menu.svg" alt="menu" (click)="toggleMenu()"/>
+        <img [src]="menuIcon" alt="menu" (click)="toggleMenu()"/>
       </div>
       <ul class="menu-content show" id="menu">
         <li><a routerLink="" >Home</a></li>
