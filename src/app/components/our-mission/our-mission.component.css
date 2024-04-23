@@ -25,7 +25,8 @@
   
 }
 .our-mission-content p {
-  line-height: 26px;
+  line-height: 30px;
+  text-align: justify;
 }
 .our-mission-img-container {
   overflow: hidden;

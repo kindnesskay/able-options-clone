@@ -23,7 +23,7 @@ main {
   padding-top: 100px;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 img {
   height: 100%;
@@ -39,6 +39,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 @media screen and (max-width: 600px) {

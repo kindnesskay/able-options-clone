@@ -2,6 +2,7 @@
   padding: 10px;
   display: flex;
   gap: 20px;
+  
 
 }
 .card {
@@ -10,21 +11,22 @@
   border-radius: 20px;
   background-color: var(--primary_color);
   color: white;
-  font-size: 16px;
   display: flex;
   gap: 25px;
   justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .card-content {
-  line-height: 25px;
+  line-height:30px;
+  text-align: justify;
   padding-bottom: 10px;
-  font-size: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 50%;
+  height: fit-content;
   
 }
 .card-img{
