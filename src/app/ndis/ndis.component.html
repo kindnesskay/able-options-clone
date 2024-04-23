@@ -1,13 +1,30 @@
 <section>
   <app-image-side title="Ndis"></app-image-side>
   <div class="content">
-    <div class="info-videos container">
-      <app-video
-        videoSrc="https://www.youtube.com/embed/qZOjPBJiBPg"
-        [videoTitle]="'How To - What is the NDIS?'"
-      ></app-video>
-      <app-video></app-video>
-      <app-video></app-video>
+    <div class="info-videos container" #gridBoxes>
+      <div #gridBox>
+        <app-video
+          [videoUrl]="boxes[0].videoId"
+          [height]="boxes[0].height"
+          [width]="boxes[0].width"
+        ></app-video>
+      </div>
+      <!--  -->
+      <div #gridBox>
+        <app-video
+          [videoUrl]="boxes[1].videoId"
+          [height]="boxes[1].height"
+          [width]="boxes[1].width"
+        ></app-video>
+      </div>
+      <!--  -->
+      <div #gridBox>
+        <app-video
+          [videoUrl]="boxes[2].videoId"
+          [height]="boxes[2].height"
+          [width]="boxes[2].width"
+        ></app-video>
+      </div>
     </div>
     <div class="info-content container">
       <!-- what is ndis -->
