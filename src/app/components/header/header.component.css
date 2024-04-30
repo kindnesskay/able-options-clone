@@ -73,9 +73,7 @@ img {
   
 }
 
-a{
-  width: fit-content;
-}
+
 .link:hover {
   cursor: pointer;
   transition: all 0.5s;
