@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 90px;
   position: relative;
   width: 100%;
   /* min-height: 100vh; */
@@ -42,15 +42,23 @@ section {
   
 }
 
+.video-container button{
+  display: flex;
+  justify-content: center;   
+ }
+ 
+ .image-slide{
+   height: 400px;
+ }
+
 @media screen and (max-width: 600px) {
   h2,
   h3 {
     font-size: clamp(25px, 30px, 35px);
   }
+  .image-slide{
+    height: 200px;
+
+  }
 }
 
-
-.video-container button{
- display: flex;
- justify-content: center;   
-}

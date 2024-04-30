@@ -1,0 +1,21 @@
+<div class="slider-container">
+  <div class="slides">
+    <div
+      class="slider"
+      *ngFor="let image of images; let i = index"
+      [ngStyle]="{
+        'background-image': 'url(' + image + ')',
+        transform: 'translateX(' + -100 * currentIndex + '%)'
+      }"
+    ></div>
+  </div>
+  <div class="hero-section">
+    <h1>DISABILITY SERVICE PROVIDED WITH EXCELLENCE AND PRECISION</h1>
+    <button class="call-button">Call Now!</button>
+  </div>
+
+  <div class="controls">
+    <button (click)="prevImage()"><img src="assets/back.png" /></button>
+    <button (click)="nextImage()"><img src="assets/forward.png" /></button>
+  </div>
+</div>

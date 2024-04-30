@@ -1,6 +1,7 @@
 <section>
-
-    <app-image-side title="About"></app-image-side>
+<div class="image-slide">
+    <app-image-side title="About" [image]="images[currentIndex]" @slideInOut></app-image-side>
+</div>
 
         <div class="about-content container">
             <div class="our-mission">
