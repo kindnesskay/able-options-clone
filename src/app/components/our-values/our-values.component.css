@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 20px;
 
   }
@@ -50,6 +50,7 @@
     }
     .our-values-content {
       width: 100%;
+      padding: 0 15px;
     }
     .our-values-img {
       width: 100%;

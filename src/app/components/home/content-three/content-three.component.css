@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0;
   gap: 20px;
 }
 .content-3 h3 {
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 750px) {
   .content-3-content p {
-    text-align: justify;
+    /* text-align: justify; */
   }
   .content-3 h3 {
     font-size: 35px;

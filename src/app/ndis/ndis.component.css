@@ -102,10 +102,11 @@ h2 {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width:400px) {
   .info-content h1,
   h2 {
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 800;
   }
   .info-content {
     text-align: start;
