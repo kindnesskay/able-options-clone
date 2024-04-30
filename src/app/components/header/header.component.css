@@ -64,10 +64,9 @@ img {
   padding: 0 5px;
 }
 .link {
-  height: 45px;
   padding: 10px 15px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 15px;
   transition: all 0.5s;
 }
 a{
