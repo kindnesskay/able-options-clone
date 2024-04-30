@@ -1,3 +1,4 @@
+
 section {
   display: flex;
   flex-direction: column;
@@ -13,24 +14,23 @@ height: fit-content;
   align-items: center;
   width: 100%;
 }
+.content-1,.content-2,.content-3{
+  padding: 30px 50px;
+  
+  }
 .content-1 {
   background-color: #616388;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 20px;
-  padding: 50px 0;
+  gap: 20px;    
 }
 .content-1-top {
-  margin: 20px 0;
   color: white;
   text-align: center;
   line-height: 30px;
-  padding: 0 20px;
-  
 }
 .content-1-top p{
   max-width: 800px;
@@ -39,7 +39,7 @@ height: fit-content;
 }
 .content-1-top h2 {
   font-size: 45px;
-  padding: 25px 0;
+  padding: 15px 0;
   width: 100%;
 }
 .content-2 {
@@ -48,26 +48,35 @@ height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
 }
 
 @media screen and (max-width: 800px) {
-
+  .content-1-top h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
 .content-1-top p{
-  text-align: justify;
+  font-size: 18px;
 }
 
 }
 
+@media screen and (max-width: 600px) {
+  .content-1,.content-2,.content-3{
+    padding: 30px;
+    }
+}
 @media screen and (max-width: 400px) {
   .hero h1 {
     font-size: 25px;
   }
-.content-1-top p{
-  text-align: justify;
-}
+
 .hero{
   max-height: 350px;
   min-height: 100px;
 }
+.content-1,.content-2,.content-3{
+  padding: 20px;
+  }
 }
+

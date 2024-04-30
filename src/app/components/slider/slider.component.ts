@@ -48,15 +48,21 @@ export class SliderComponent {
       
   }
 
-  // prevImage() {
-  //   if (this.currentIndex > 0) {
-  //     this.currentIndex--;
-  //   }
-  // }
+  interval: any;
 
-  // nextImage() {
-  //   if (this.currentIndex < this.images.length - 1) {
-  //     this.currentIndex++;
-  //   }
-  // }
+  ngOnInit(): void {
+    this.startSlideShow();
+  }
+
+  startSlideShow(): void {
+    this.interval = setInterval(() => {
+      this.nextImage();
+    }, 3000); // Change image every 3 seconds (adjust as needed)
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.interval);
+  }
+
+  
 }

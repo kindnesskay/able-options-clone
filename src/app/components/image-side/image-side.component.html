@@ -1,8 +1,15 @@
 <div class="slide-container">
   <div class="overlay">
-    <h1>{{title}}</h1>
+    <h1>{{ title }}</h1>
   </div>
-  <div class="img-slides-container">
-    <img id="slides" [hidden]="!image" [alt]="image" [src]="image" />
+  <div class="background-slides">
+    <div
+      class="background-slide"
+      *ngFor="let image of images; let i = index"
+      [ngStyle]="{
+        'background-image': 'url(' + image + ')',
+        transform: 'translateX(' + -100 * currentIndex + '%)'
+      }"
+    ></div>
   </div>
 </div>

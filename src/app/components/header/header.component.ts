@@ -10,7 +10,7 @@ import { ScrollService } from '../scroll.service';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  isMenuOpen = false;
+  isMenuOpen = true;
   menuIcon = 'assets/menu.svg';
   constructor(private router: Router,scrollService:ScrollService) {
     // Subscribe to router events
