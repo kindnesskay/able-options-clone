@@ -69,8 +69,10 @@ img {
   border-radius: 10px;
   font-size: 18px;
   transition: all 0.5s;
+}
+a{
+  min-width: fit-content;
 
-  
 }
 
 
