@@ -8,11 +8,12 @@
   border-radius: 20px;
   padding: 10px 0;
 }
-.our-values-container h2 {
-  border-left: 5px solid var(--primary_color);
+
+.heading {
+  border-left: 6px solid var(--primary_color);
   padding-left: 10px;
   color: var(--primary_color);
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 800;
 }
 h3 {
@@ -34,12 +35,14 @@ h3 {
   width: 50%;
   color: rgb(69, 67, 67);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .our-values-content-points {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-top: 5px;
 }
 @media screen and (max-width: 800px) {
   .our-values-container {

@@ -8,6 +8,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .text-size {
+    @apply max-sm:text-sm text-lg;
+  }
+}
 .primary-color {
   background-color: #56006b;
 }

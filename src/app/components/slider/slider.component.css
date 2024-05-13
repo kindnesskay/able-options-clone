@@ -96,7 +96,7 @@
     text-align: justify;
   }
   .slider-container {
-    height: fit-content;
+    max-height: 400px;
   }
 
   .call-button {
@@ -107,6 +107,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .slider-container {
+    padding-left: 0;
+    max-height: 250px;
+  }
   .hero-section h1 {
     font-size: 30px;
     max-width: 300px;
