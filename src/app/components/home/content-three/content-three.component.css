@@ -11,7 +11,7 @@
   font-size: 42px;
   padding: 10px;
   font-weight: 800;
-  color: #616388;
+  color: var(--secondary_color);
   text-align: center;
 }
 .content-3-content {
@@ -31,7 +31,6 @@
   max-width: 1200px;
   width: fit-content;
   height: fit-content;
-  
 }
 .content-3-img img {
   border-radius: 15px;
