@@ -1,4 +1,5 @@
-<div class="slider-container">
+<div class="slider-container relative">
+  <div class="hero-overlay h-full absolute left-0 top-0"></div>
   <div class="slides">
     <div
       class="slider"
@@ -9,13 +10,20 @@
       }"
     ></div>
   </div>
-  <div class="hero-section">
-    <h1>DISABILITY SERVICE PROVIDED WITH EXCELLENCE AND PRECISION</h1>
-    <button class="call-button">Call Now!</button>
+  <div
+    class="text-white p-4 flex justify-center flex-col w-fit relative h-fit pb-20 z-10"
+  >
+    <h1 class="font-bold flex flex-col mb-4 w-fit">
+      <span class="text-5xl tracking-wide"> EXCELLENCE &</span>
+      <span class="text-7xl"> PRECISION </span>
+    </h1>
+    <p class="text-xl absolute bottom-0">
+      Able options Pty Ltd offers variety of support services for people living
+      in the North and the Northwest coast of Tasmania
+    </p>
   </div>
-
-  <div class="controls">
+  <!-- <div class="controls">
     <button (click)="prevImage()"><img src="assets/back.png" /></button>
     <button (click)="nextImage()"><img src="assets/forward.png" /></button>
-  </div>
+  </div> -->
 </div>

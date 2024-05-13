@@ -11,9 +11,10 @@
   height: 100%;
   display: grid;
   place-items: center;
-  background-image: linear-gradient(to right, #48466dcc, #8974947b, #90749f28);
+  background-image: linear-gradient(to right, #55006d1e, #55006d52, #55006d60);
   border: none;
 }
+
 .overlay h1 {
   font-size: 45px;
   color: #fff;
@@ -28,7 +29,6 @@
   height: 100%;
   width: 100%;
   z-index: -1;
-
 }
 .background-slide {
   flex-grow: 0;
