@@ -2,12 +2,10 @@
   padding: 20px;
   display: flex;
   gap: 20px;
-  
-
 }
 .card {
   border: 1px solid rgb(220, 220, 220);
-  padding:15px;
+  padding-left: 20px;
   border-radius: 20px;
   background-color: var(--primary_color);
   color: white;
@@ -18,20 +16,19 @@
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 30px;
-  
 }
 .card-content {
   display: flex;
-  padding-bottom: 20px;
+  padding: 20px 0;
   flex-direction: column;
   width: 50%;
   height: 100%;
   justify-content: space-evenly;
 }
-.card-content p{
+.card-content p {
   line-height: 30px;
 }
-.card-img{
+.card-img {
   width: 50%;
 }
 
@@ -41,63 +38,62 @@ img {
   height: auto;
   max-width: 100%;
 }
-.referral{
-    background-color: var(--secondary_color);
-    height: 40px;
-    width: 100%;
-    max-width: 150px;
-    color: white;
-    padding: 5px 15px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.5s;
-    border: none;
+.referral {
+  background-color: var(--secondary_color);
+  height: 40px;
+  width: 100%;
+  max-width: 150px;
+  color: white;
+  padding: 5px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: none;
 }
-.referral:hover{
-    transition: all 0.5s;
+.referral:hover {
+  transition: all 0.5s;
 }
-@media screen and (max-width:900px){
-  .card-content p{
-    line-height:20px;
+@media screen and (max-width: 900px) {
+  .card-content p {
+    line-height: 20px;
   }
 }
-@media screen and (max-width:800px){
-  .card{
+@media screen and (max-width: 800px) {
+  .card {
     flex-direction: column;
     padding: 0;
     padding-bottom: 30px;
   }
-  .card-content,.card-img{
+  .card-content,
+  .card-img {
     width: 100%;
-    
   }
-  .card-content{
+  .card-content {
     padding: 0 20px;
     text-align: center;
     font-size: 20px;
-    
   }
-  .card-content p{
+  .card-content p {
     line-height: 30px;
   }
-  img{
+  img {
     border-radius: 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
 
-  .referral{
+  .referral {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-@media screen and (max-width:400px){
-  .card-content p{
+@media screen and (max-width: 400px) {
+  .card-content p {
     font-size: 18px;
   }
-  .referral{
+  .referral {
     font-size: 16px;
     height: 30px;
     max-width: 120px;

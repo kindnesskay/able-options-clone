@@ -1,19 +1,22 @@
 .our-mission-container {
   display: flex;
-  background-color: #f3f3f3;
   gap: 10px;
-  color: #fff;
-  border-radius: 20px;
-  padding: 10px;
+  padding: 50px 0px;
 }
+.our-mission-img-container {
+  overflow: hidden;
+  height: auto;
+  width: auto;
+  max-width: 50%;
+}
+
 .heading {
-  font-size: 35px;
-  border-left: 4px solid white;
+  border-left: 7px solid var(--primary_color);
   padding-left: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
   color: var(--primary_color);
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 .our-mission-content {
   width: 50%;
@@ -26,18 +29,14 @@
   margin-top: auto;
   margin-bottom: auto;
 }
-.our-mission-content p {
+.content p {
   text-align: center;
-  line-height: 30px;
   font-size: 22px;
+  color: rgb(69, 67, 67);
+  line-height: 20px;
 }
 .our-mission-img-container img {
   border-radius: 20px;
-}
-.our-mission-img-container {
-  overflow: hidden;
-  height: auto;
-  width: 50%;
 }
 
 @media screen and (max-width: 800px) {
@@ -57,7 +56,7 @@
     font-size: 28px;
   }
   .our-mission-img-container {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
