@@ -12,13 +12,17 @@
   max-height: 300px;
 }
 
-.heading {
-  border-left: 6px solid var(--primary_color);
-  padding-left: 10px;
-  color: var(--primary_color);
-  font-size: clamp(30px, 3vw, 42px);
-  font-weight: 800;
-  margin-bottom: 5px;
+.underline-heading {
+  transition: all 1s;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 0px;
+  width: 70%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 5px solid;
 }
 .our-mission-content {
   width: 50%;
@@ -28,12 +32,14 @@
   align-items: center;
   margin-top: auto;
   margin-bottom: auto;
+  /* text-align: center; */
 }
 .content p {
   text-align: center;
   color: rgb(69, 67, 67);
 }
-.our-mission-img-container img {
+.our-mission-img-container img,
+.our-mission-img-container {
   border-radius: 20px;
 }
 

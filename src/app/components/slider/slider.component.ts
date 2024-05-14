@@ -5,22 +5,21 @@ import {
   style,
   animate,
   transition,
-  
 } from '@angular/animations';
 
 import { NgFor, NgStyle } from '@angular/common';
 @Component({
   selector: 'app-slider',
   standalone: true,
-  imports: [NgStyle,NgFor],
+  imports: [NgStyle, NgFor],
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.css',
-  animations:[
-    trigger("slide",[
-      state("next",style({transform:'translate(120%)'})),
-      state("prev",style({transform:'translate(0)'}))
-    ])
-  ]
+  animations: [
+    trigger('slide', [
+      state('next', style({ transform: 'translate(120%)' })),
+      state('prev', style({ transform: 'translate(0)' })),
+    ]),
+  ],
 })
 export class SliderComponent {
   images: string[] = [
@@ -30,22 +29,18 @@ export class SliderComponent {
     'assets/people-with-disabilities.jpg',
     'assets/baking.webp',
     'assets/girl-on-wheelchair.webp',
-    'assets/mother-and-child.jpg',
-
+    'assets/help-elderly.webp',
   ]; // Add your image URLs here
   currentIndex: number = 0;
 
   prevImage() {
     this.currentIndex =
       this.currentIndex === 0 ? this.images.length - 1 : this.currentIndex - 1;
-      
-      
   }
 
   nextImage() {
     this.currentIndex =
       this.currentIndex === this.images.length - 1 ? 0 : this.currentIndex + 1;
-      
   }
 
   interval: any;
@@ -63,6 +58,4 @@ export class SliderComponent {
   ngOnDestroy(): void {
     clearInterval(this.interval);
   }
-
-  
 }

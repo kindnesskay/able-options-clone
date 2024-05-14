@@ -4,6 +4,7 @@ import { OurValuesComponent } from '../components/our-values/our-values.componen
 import { OurMissionComponent } from '../components/our-mission/our-mission.component';
 import { SliderComponent } from '../components/slider/slider.component';
 import { TheteamComponent } from '../components/the-team/the-team.component';
+import { WelcomeComponent } from '../components/welcome/welcome.component';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { TheteamComponent } from '../components/the-team/the-team.component';
     ContentThreeComponent,
     SliderComponent,
     TheteamComponent,
+    WelcomeComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

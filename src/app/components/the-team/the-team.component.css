@@ -2,22 +2,19 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
   gap: 25px;
   min-height: 400px;
 }
-.the-team-content p {
+.the-team-content {
 }
 .the-team-content {
   width: 50%;
-  text-align: center;
-}
-.heading {
-  border-left: 5px solid var(--primary_color);
-  color: var(--primary_color);
-  font-size: clamp(30px, 3vw, 42px);
-  font-weight: 800;
-  margin-bottom: 10px;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .the-team-img {

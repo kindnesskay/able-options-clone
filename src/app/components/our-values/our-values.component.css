@@ -10,8 +10,6 @@
 }
 
 .heading {
-  border-left: 6px solid var(--primary_color);
-  padding-left: 10px;
   color: var(--primary_color);
   font-size: clamp(30px, 3vw, 42px);
   font-weight: 800;
@@ -29,6 +27,8 @@ h3 {
 .our-values-img {
   height: auto;
   width: 50%;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .our-values-content {
@@ -38,6 +38,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 .our-values-content-points {
   display: flex;

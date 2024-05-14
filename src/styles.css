@@ -10,6 +10,45 @@
   font-optical-sizing: auto;
   width: 100%;
 }
+.heading {
+  color: var(--primary_color);
+  font-size: clamp(30px, 3vw, 42px);
+  font-weight: 800;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+.heading:hover {
+  cursor: pointer;
+}
+.heading:hover .underline-heading {
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.underline-heading {
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 0px;
+  width: 70%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 5px solid;
+}
+.hover-img:hover {
+  cursor: pointer;
+}
+.hover-img {
+  transition: all 0.5s;
+}
+.hover-img:hover {
+  transition: all 0.5s;
+  transform: scale(120%);
+}
 @layer components {
   .text-size {
     @apply max-sm:text-sm text-lg;
