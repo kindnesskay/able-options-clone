@@ -65,7 +65,6 @@
   width: 100%;
   opacity: 0.7;
   background-image: linear-gradient(to right, #56006d, #760097ae, #ffffff00);
-  z-index: 2;
 }
 .hero-section h1 {
   font-size: 40px;
