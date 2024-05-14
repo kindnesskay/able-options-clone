@@ -15,7 +15,7 @@ section {
 .content-1,
 .content-2,
 .content-3 {
-  padding: 30px 50px;
+  padding: 30px;
 }
 .content-1 {
   background-color: var(--primary_color);
@@ -24,12 +24,11 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 20px;
+  gap: 40px;
 }
 .content-1-top {
   color: white;
   text-align: center;
-  line-height: 30px;
 }
 .content-1-top p {
   max-width: 800px;
@@ -38,8 +37,8 @@ section {
 }
 .content-1-top h2 {
   font-size: 45px;
-  padding: 15px 0;
   width: 100%;
+  margin-bottom: 10px;
 }
 .content-2 {
   background-color: #f3f3f3;
@@ -53,9 +52,6 @@ section {
   .content-1-top h2 {
     font-size: 30px;
     font-weight: 700;
-  }
-  .content-1-top p {
-    font-size: 18px;
   }
 }
 

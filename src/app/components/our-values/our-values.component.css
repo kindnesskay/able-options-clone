@@ -1,61 +1,65 @@
 .our-values-container {
-    background-color: #f3f3f3;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-    border-radius: 20px;
+  background-color: #f3f3f3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+  border-radius: 20px;
+}
+.our-values-container h2 {
+  border-left: 5px solid var(--primary_color);
+  padding-left: 10px;
+  padding: 10px;
+  color: var(--primary_color);
+  font-size: 42px;
+  font-weight: 800;
+}
+h3 {
+  font-weight: 700;
+  font-size: 17px;
+}
 
+.our-values-img img {
+  width: auto;
+  height: auto;
+}
+.our-values-img {
+  overflow: hidden;
+  display: flex;
+  height: fit-content;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.our-values-content {
+  width: 50%;
+  color: rgb(69, 67, 67);
+  line-height: 20px;
+}
+.our-values-content-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .our-values-container {
+    flex-direction: column;
+  }
+  .our-values-content {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .our-values-img {
+    width: 100%;
   }
   .our-values-container h2 {
-    border-left: 5px solid var(--primary_color);
-    padding-left: 10px;
-    padding: 10px;
-    color: var(--primary_color);
-    font-size:42px;
-    font-weight: 800;
-
+    font-size: 25px;
   }
-  h3{
-    font-weight:700;
-    font-size: 17px;
-  }
-  
   .our-values-img img {
-    border-radius: 20px;
     width: 100%;
     height: auto;
   }
-  .our-values-img{
-    height: fit-content;
-    width: 50%;
-
-  }
-  
-  .our-values-content {
-    width: 50%;
-    color: rgb(69, 67, 67);
-    line-height: 20px;
-  }
-  .our-values-content-points {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  @media screen and (max-width: 800px) {
-    .our-values-container {
-      flex-direction: column;
-    }
-    .our-values-content {
-      width: 100%;
-      padding: 0 15px;
-    }
-    .our-values-img {
-      width: 100%;
-    }
-    .our-values-container h2{
-      font-size:25px;
-    }
-  }
+}

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: sans-serif;
   width: 100%;
 }
 
@@ -32,6 +32,10 @@ img {
 .container {
   max-width: 1140px;
 }
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
 
 section {
   display: flex;
@@ -49,7 +53,8 @@ section {
 .image-slide {
   height: 400px;
 }
-
+@media screen and (max-width: 800px) {
+}
 @media screen and (max-width: 600px) {
   h2,
   h3 {
@@ -57,5 +62,8 @@ section {
   }
   .image-slide {
     height: 200px;
+  }
+  p {
+    font-size: 16px;
   }
 }
