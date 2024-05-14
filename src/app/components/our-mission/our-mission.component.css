@@ -1,20 +1,24 @@
 .our-mission-container {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  min-height: 400px;
+  align-items: center;
 }
 .our-mission-img-container {
   overflow: hidden;
   height: auto;
   width: auto;
   max-width: 50%;
+  max-height: 300px;
 }
 
 .heading {
   border-left: 6px solid var(--primary_color);
   padding-left: 10px;
   color: var(--primary_color);
-  font-size: 40px;
+  font-size: clamp(30px, 3vw, 42px);
   font-weight: 800;
+  margin-bottom: 5px;
 }
 .our-mission-content {
   width: 50%;
@@ -22,7 +26,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -45,7 +48,6 @@
     width: 100%;
   }
   .our-mission-content h2 {
-    /* width: 100%; */
     font-size: 28px;
   }
   .our-mission-img-container {
@@ -56,5 +58,10 @@
 @media screen and (max-width: 400px) {
   .our-mission-content p {
     text-align: center;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
   }
 }

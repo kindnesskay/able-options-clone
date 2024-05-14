@@ -13,7 +13,7 @@
   border-left: 6px solid var(--primary_color);
   padding-left: 10px;
   color: var(--primary_color);
-  font-size: 40px;
+  font-size: clamp(30px, 3vw, 42px);
   font-weight: 800;
 }
 h3 {
@@ -51,8 +51,11 @@ h3 {
   .our-values-content {
     width: 100%;
   }
+
   .our-values-img {
     width: 100%;
+    max-height: 300px;
+    overflow: hidden;
   }
   .our-values-container h2 {
     font-size: 25px;

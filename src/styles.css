@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,9 +8,6 @@
   font-family: sans-serif;
   width: 100%;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @layer components {
   .text-size {
     @apply max-sm:text-sm text-lg;
@@ -31,7 +31,10 @@ body {
   width: 100%;
   position: relative;
 }
-
+.large-text {
+  font-size: 40px;
+  font-weight: 800;
+}
 main {
   padding-top: 90px;
   position: relative;
@@ -63,7 +66,8 @@ section {
   height: 400px;
 }
 p {
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
 }
 @media screen and (max-width: 600px) {
   h2,
