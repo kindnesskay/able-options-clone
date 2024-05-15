@@ -10,36 +10,36 @@ import { Component, Input } from '@angular/core';
 })
 export class ImageSideComponent {
   @Input() title!: string;
-  images: string[] = [
-    'assets/boy.jpg',
-    'assets/people-with-disabilities.jpg',
-    'assets/baking.webp',
-    'assets/girl-on-wheelchair.webp',
-  ]; // Add your image URLs here
-  currentIndex: number = -1;
-  interval:any
+  @Input() image!: string;
 
-  nextSlide() {
-    if (this.currentIndex == this.images.length - 1) {
-      this.currentIndex = -1;
-    }
-    this.currentIndex++;
-  }
+  // [
+  //   'assets/boy.jpg',
+  //   'assets/people-with-disabilities.jpg',
+  //   'assets/baking.webp',
+  //   'assets/girl-on-wheelchair.webp',
+  // ]; // Add your image URLs here
+  // currentIndex: number = -1;
+  // interval:any
 
+  // nextSlide() {
+  //   if (this.currentIndex == this.images.length - 1) {
+  //     this.currentIndex = -1;
+  //   }
+  //   this.currentIndex++;
+  // }
 
-  startSlideShow():void{
-    this.interval=setInterval(()=>{
-      this.nextSlide()
-    },3000)
-    this.nextSlide()
+  // startSlideShow():void{
+  //   this.interval=setInterval(()=>{
+  //     this.nextSlide()
+  //   },3000)
+  //   this.nextSlide()
 
-  }
-  ngOnInit():void{
-    this.startSlideShow()
-  }
+  // }
+  // ngOnInit():void{
+  //   this.startSlideShow()
+  // }
 
-  ngOnDestroy(){
-    clearInterval(this.interval)
-  }
-
+  // ngOnDestroy(){
+  //   clearInterval(this.interval)
+  // }
 }

@@ -31,9 +31,8 @@
   z-index: -1;
 }
 .background-slide {
-  flex-grow: 0;
-  flex-shrink: 0;
   transition: ease-in-out 500ms;
   background-repeat: no-repeat;
   background-size: cover;
+  transform: translateY(-20%) scaleY(140%);
 }
