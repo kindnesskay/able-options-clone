@@ -80,10 +80,10 @@
   font-size: clamp(12px, 3vw, 21px);
 }
 .exe {
-  font-size: clamp(30px, 3vw, 45px);
+  font-size: clamp(30px, 3vw, 40px);
 }
 .pre {
-  font-size: clamp(45px, 3.5vw, 70px);
+  font-size: clamp(45px, 4vw, 70px);
 }
 .call-button {
   padding: 10px 20px;

@@ -1,15 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: Montserrat;
+  src: url("/assets/montserrat/Montserrat-ExtraBold.otf"), format("truetype");
+}
 * {
+  font-family: Montserrat;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
-  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   width: 100%;
 }
+
 .heading {
   color: var(--primary_color);
   font-size: clamp(30px, 3vw, 42px);
