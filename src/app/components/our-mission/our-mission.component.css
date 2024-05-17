@@ -34,9 +34,8 @@
   margin-bottom: auto;
   /* text-align: center; */
 }
-.content p {
-  text-align: center;
-  /* color: rgb(69, 67, 67); */
+p {
+  /* text-align: center; */
   color: var(--primary_color);
 }
 .our-mission-img-container img,
