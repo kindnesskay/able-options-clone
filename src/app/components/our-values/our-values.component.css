@@ -16,7 +16,7 @@
 }
 h3 {
   font-weight: 800;
-  font-size: clamp(20px, 3vw, 32px);
+  font-size: clamp(18px, 3vw, 22px);
 }
 .our-values-img img {
   border-radius: 20px;
