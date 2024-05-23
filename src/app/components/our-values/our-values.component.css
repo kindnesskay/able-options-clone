@@ -44,24 +44,25 @@ h3 {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+
   gap: 8px;
 }
 .points-icon {
-  height: 80px;
-  width: 80px;
+  height: clamp(40px, 5vw, 80px);
+  width: clamp(40px, 5vw, 80px);
   background-color: var(--primary_color);
   padding: 10px;
   overflow: hidden;
   border-radius: 9999px;
   display: grid;
   place-items: center;
+  flex-shrink: 0;
 }
 .points-icon img {
-  height: 95%;
-  width: 95%;
+  height: 98%;
+  width: 98%;
 }
 .points {
-  width: 85%;
 }
 @media screen and (max-width: 800px) {
   .our-values-container {
