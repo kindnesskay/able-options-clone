@@ -15,6 +15,7 @@
   font-weight: 800;
 }
 h3 {
+  font-family: Montserrat-Black;
   font-weight: 800;
   font-size: clamp(18px, 3vw, 22px);
 }
@@ -36,13 +37,31 @@ h3 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
 }
 .our-values-content-points {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 8px;
+}
+.points-icon {
+  height: 80px;
+  width: 80px;
+  background-color: var(--primary_color);
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 9999px;
+  display: grid;
+  place-items: center;
+}
+.points-icon img {
+  height: 95%;
+  width: 95%;
+}
+.points {
+  width: 85%;
 }
 @media screen and (max-width: 800px) {
   .our-values-container {

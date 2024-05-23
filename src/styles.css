@@ -3,7 +3,11 @@
 @tailwind utilities;
 @font-face {
   font-family: Montserrat;
-  src: url("/assets/montserrat/Montserrat-ExtraBold.otf"), format("truetype");
+  src: url("/assets/montserrat/Montserrat-Bold.otf"), format("truetype");
+}
+@font-face {
+  font-family: Montserrat-Black;
+  src: url("/assets/montserrat/Montserrat-Black.otf"), format("truetype");
 }
 * {
   font-family: Montserrat;
@@ -13,14 +17,17 @@
   font-optical-sizing: auto;
   width: 100%;
 }
-
+h1 {
+  font-family: Montserrat-Black;
+}
 .heading {
+  font-family: Montserrat-Black;
   color: var(--primary_color);
   font-size: clamp(30px, 3vw, 42px);
   font-weight: 800;
   position: relative;
   width: fit-content;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding-bottom: 5px;
 }
 .heading:hover {
@@ -110,11 +117,17 @@ section {
 }
 
 .image-slide {
-  height: 400px;
+  height: 500px;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
+}
+
+/*  */
+.banner-head {
+  @apply text-center font-bold text-white;
+  font-size: clamp(30px, 10vw, 80px);
 }
 @media screen and (max-width: 600px) {
   h2,

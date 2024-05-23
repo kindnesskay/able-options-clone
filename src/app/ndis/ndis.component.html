@@ -1,6 +1,16 @@
 <section>
-  <div class="image-slide">
-    <app-image-side image="assets/baking.webp" title="Ndis"></app-image-side>
+  <div class="image-slide custom">
+    <div class="overlay">
+      <h1 class="banner-head">NDIS</h1>
+    </div>
+    <div
+      class="custom-img"
+      [ngStyle]="{ 'background-image': 'url(' + left_image + ')' }"
+    ></div>
+    <div
+      class="custom-img"
+      [ngStyle]="{ 'background-image': 'url(' + right_image + ')' }"
+    ></div>
   </div>
   <div class="content">
     <div class="info-videos container" #gridBoxes>
