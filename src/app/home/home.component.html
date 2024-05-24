@@ -1,34 +1,26 @@
 <section>
-  <div class="hero">
-    <h1>DISABILITY SERVICE PROVIDED WITH EXCELLENCE AND PRECISION</h1>
-    <button>Call Now!</button>
+  <div>
+    <app-slider></app-slider>
   </div>
-
   <div class="home-main-content">
     <div class="content-1">
-      <div class="content-1-top container">
-        <h2>WELCOME</h2>
-        <p>
-          Able Options Pty Ltd offers variety of support services for people
-          living in the North and Northwest coast of Tasmania, we are also
-          located in Brisbane and its environs. We support Self-Managed and
-          Plan-Managed participants. At Able Options, empowering vulnerable and
-          person living with disability to reach their optimal goal is what we
-          pride ourselves with, including providing support across all ages and
-          abilities.
-        </p>
+      <div class="container content-1-content">
+        <app-welcome></app-welcome>
       </div>
-      <div class="container">
-        <app-our-mission image="assets/woman.webp"></app-our-mission>
-      </div>
+    </div>
+    <div class="container content">
+      <app-our-mission
+        class="rounded"
+        image="assets/Disabled-child.webp"
+      ></app-our-mission>
     </div>
     <div class="content-2">
       <div class="container">
         <app-our-values></app-our-values>
       </div>
     </div>
-    <div class="container">
-      <app-content-three></app-content-three>
+    <div class="container content-3">
+      <app-theteam></app-theteam>
     </div>
   </div>
 </section>

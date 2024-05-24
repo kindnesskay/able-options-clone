@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class OurMissionComponent {
   @Input() image!: string;
+  @Input() className!: string;
+
 }

@@ -1,8 +1,10 @@
 <div class="slide-container">
   <div class="overlay">
-    <h1>{{title}}</h1>
+    <h1 class="banner-head">{{ title }}</h1>
   </div>
-  <div class="img-slides-container">
-    <img id="slides" [hidden]="!image" [alt]="image" [src]="image" />
-  </div>
+
+  <div
+    class="background-slide"
+    [ngStyle]="{ 'background-image': 'url(' + image + ')' }"
+  ></div>
 </div>

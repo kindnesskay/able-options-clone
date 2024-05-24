@@ -2,35 +2,6 @@ section {
   display: flex;
   flex-direction: column;
 }
-.hero {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  min-height: 500px;
-  width: 100%;
-}
-.hero h1 {
-  font-size: 40px;
-  color: var(--primary_color);
-  width: 100%;
-  max-width: 600px;
-  padding: 10px;
-}
-.hero button {
-  padding: 8px 20px;
-  height: 50px;
-  font-size: 18px;
-  border: none;
-  font-weight: 600;
-  width: 100%;
-  max-width: 150px;
-  background-color: #582f61;
-  color: white;
-  border-radius: 10px;
-}
 
 .home-main-content {
   display: flex;
@@ -38,50 +9,52 @@ section {
   align-items: center;
   width: 100%;
 }
+.heading {
+  color: var(--primary_color);
+  font-size: clamp(30px, 3vw, 45px);
+  font-weight: 800;
+}
+.content,
+.content-1,
+.content-2,
+.content-3 {
+  padding: 30px;
+}
+
 .content-1 {
-  background-color: #616388;
-  padding: 10px;
+  background-color: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 20px;
-  padding: 50px 0;
+  color: var(--primary_color);
+  height: fit-content;
+  min-height: 400px;
 }
-.content-1-top {
-  margin: 20px 0;
-  color: white;
-  text-align: center;
-  line-height: 30px;
-  padding: 0 20px;
-  
-}
-.content-1-top p{
-  max-width: 800px;
-  margin-left: auto;
-  margin-right:auto ;
-}
-.content-1-top h2 {
-  font-size: 45px;
 
-  padding: 25px;
-}
 .content-2 {
   background-color: #f3f3f3;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
 }
 
-@media screen and (max-width: 600px) {
-  .hero h1 {
-    font-size: 35px;
+@media screen and (max-width: 800px) {
+  .content-1-top h2 {
+    font-size: 30px;
+    font-weight: 700;
   }
-.content-1-top p{
-  text-align: justify;
 }
 
+@media screen and (max-width: 400px) {
+  .hero h1 {
+    font-size: 25px;
+  }
+
+  .hero {
+    max-height: 350px;
+    min-height: 100px;
+  }
 }
