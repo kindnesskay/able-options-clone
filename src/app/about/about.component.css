@@ -1,7 +1,15 @@
 section {
   position: relative;
   padding-bottom: 20px;
+section {
+  position: relative;
+  padding-bottom: 20px;
 }
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
 .about-content {
   display: flex;
   flex-direction: column;
@@ -22,6 +30,20 @@ section {
   }
   .our-mission {
     padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .image-slide {
+    height: 300px;
+  }
+  .our-mission {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-content {
+    /* padding:20px 0 ; */
   }
 }
 
