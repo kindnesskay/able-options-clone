@@ -48,6 +48,7 @@ p {
     flex-direction: column-reverse;
   }
   .our-mission-content p {
+  .our-mission-content p {
     width: 100%;
   }
   .our-mission-content {
@@ -71,3 +72,4 @@ p {
     position: relative;
   }
 }
+
